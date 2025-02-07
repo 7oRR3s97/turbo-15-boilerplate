@@ -1,0 +1,15 @@
+{
+  "name": "@packages/payments",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@packages/db": "workspace:*",
+    "@packages/env": "workspace:*",
+    "next-auth": "catalog:",
+    "stripe": "catalog:"
+  },
+  "devDependencies": {
+    "@tooling/typescript-config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

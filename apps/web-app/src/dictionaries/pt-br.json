@@ -1,0 +1,82 @@
+{
+  "signIn": {
+    "login": "Login",
+    "enterEmail": "Insira seu email para fazer login",
+    "email": "Email",
+    "emailPlaceholder": "m@email.com",
+    "password": "Senha",
+    "forgotPassword": "Esqueceu a senha?",
+    "signUp": "Cadastrar",
+    "loginWithGoogle": "Entrar com Google",
+    "noAccount": "Não tem uma conta?",
+    "name": "Nome",
+    "confirmPassword": "Confirmação de senha",
+    "registerWithGoogle": "Cadastrar com Google",
+    "twoFactorCode": "Código de autenticação",
+    "register": "Cadastrar",
+    "registerData": "Insira seus dados para se cadastrar",
+    "alreadyAccount": "Já tem uma conta?",
+    "errorPassword": "Senha incorreta",
+    "changePassword": "Alterar senha",
+    "resetPassword": "Altere sua senha",
+    "resetPasswordData": "Insira sua nova senha",
+    "sendResetEmail": "Enviar email de confirmação",
+    "insertResetEmail": "Insira o email para recuperação",
+    "verifyEmailCode": "Código de verificação",
+    "verifyEmailWithCode": "Insira o código de verificação enviado por email",
+    "verifyEmail": "Verificar email",
+    "resetPasswordCode": "Código de recuperação",
+    "invalidCredentials": "Credenciais inválidas",
+    "somethingWentWrong": "Algo deu errado"
+  },
+  "homePage": {
+    "title": "Bem-vindo ao nosso aplicativo",
+    "releaseSoonMessage": "Lançamento em breve"
+  },
+  "sidebar": {
+    "home": "Início",
+    "profile": "Perfil",
+    "logout": "Sair",
+    "billing": "Pagamento",
+    "settings": "Configurações"
+  },
+  "bottomNav": {
+    "settings": "Configurações",
+    "home": "Início"
+  },
+  "common": {
+    "previous": "Anterior",
+    "next": "Próximo",
+    "complete": "Concluir",
+    "completed": "Concluído",
+    "uploadImage": "Faça o upload de uma imagem",
+    "pickDate": "Escolha uma data",
+    "male": "Masculino",
+    "female": "Feminino",
+    "year": "ano",
+    "month": "mês"
+  },
+  "billing": {
+    "monthly": "Mensal",
+    "yearly": "Anual",
+    "manage": "Gerenciar",
+    "subscribe": "Assinar",
+    "upgrade": "Upgrade",
+    "pricePlans": "Planos de assinatura",
+    "choosePlan": "Escolha o melhor plano para você."
+  },
+  "settings": {
+    "name": "Nome",
+    "namePlaceholder": "Ex: João",
+    "email": "Email",
+    "emailPlaceholder": "Ex: joao@email.com",
+    "TwoFactorEnabled": "Autenticação de dois fatores",
+    "twoFactorDescription": "Ative a autenticação de dois fatores para aumentar a segurança da sua conta",
+    "updateInfo": "Atualizar informações",
+    "changePassword": "Alterar senha",
+    "currentPassword": "Senha atual",
+    "newPassword": "Nova senha",
+    "profileSettings": "Configurações de perfil",
+    "editProfile": "Editar perfil"
+  }
+}

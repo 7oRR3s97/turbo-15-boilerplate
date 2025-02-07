@@ -1,0 +1,48 @@
+{
+  "name": "@packages/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema/post": "./src/schema/post.ts",
+    "./schema/auth": "./src/schema/auth.ts"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "generate": "pnpm drizzle-kit generate --config src/drizzle.config.ts",
+    "drop-migration": "pnpm drizzle-kit drop --config src/drizzle.config.ts",
+    "migrate": "pnpm tsx ./src/migrate.ts",
+    "studio": "pnpm drizzle-kit studio --config src/drizzle.config.ts --port 3005",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.0",
+    "drizzle-zod": "0.5.1",
+    "pg": "^8.11.5",
+    "postgres": "^3.4.4",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@tooling/eslint-config": "workspace:*",
+    "@tooling/prettier-config": "workspace:*",
+    "@tooling/typescript-config": "workspace:*",
+    "dotenv-cli": "^7.4.1",
+    "drizzle-kit": "^0.27.1",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "tsx": "^3.12.7",
+    "typescript": "catalog:"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@tooling/eslint-config/base"
+    ]
+  },
+  "prettier": "@tooling/prettier-config"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@packages/env",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@t3-oss/env-nextjs": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@tooling/typescript-config": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

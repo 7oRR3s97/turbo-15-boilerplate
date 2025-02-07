@@ -1,0 +1,142 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "ui": "tui",
+  "globalDependencies": ["**/.env.*local"],
+  "tasks": {
+    "topo": {
+      "dependsOn": ["^topo"]
+    },
+    "scrape": {
+      "dependsOn": ["^scrape"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "next-env.d.ts",
+        ".expo/**",
+        ".output/**",
+        ".vercel/output/**"
+      ]
+    },
+    "start": {
+      "dependsOn": ["^start"],
+      "persistent": true,
+      "cache": false
+    },
+    "analyze": {
+      "dependsOn": ["^analyze"]
+    },
+    "dev": {
+      "dependsOn": ["^dev"],
+      "persistent": true,
+      "cache": false
+    },
+    "app:dev": {
+      "dependsOn": ["^app:dev"],
+      "persistent": true,
+      "cache": false
+    },
+    "app:build": {
+      "dependsOn": ["^app:build"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "next-env.d.ts",
+        ".expo/**",
+        ".output/**",
+        ".vercel/output/**"
+      ]
+    },
+    "app:android": {
+      "dependsOn": ["^app:android"],
+      "persistent": true,
+      "cache": false
+    },
+    "app:ios": {
+      "dependsOn": ["^app:ios"],
+      "persistent": true,
+      "cache": false
+    },
+    "app:preview": {
+      "dependsOn": ["^app:preview"],
+      "persistent": true,
+      "cache": false
+    },
+    "app:sync": {
+      "dependsOn": ["^app:sync"],
+      "persistent": true,
+      "cache": false
+    },
+    "app:generate-assets": {
+      "dependsOn": ["^app:generate-assets"],
+      "persistent": true,
+      "cache": false
+    },
+    "format": {
+      "outputs": ["node_modules/.cache/.prettiercache"],
+      "outputLogs": "new-only"
+    },
+    "lint": {
+      "dependsOn": ["^topo"],
+      "outputs": ["node_modules/.cache/.eslintcache"]
+    },
+    "typecheck": {
+      "dependsOn": ["^topo"],
+      "outputs": ["node_modules/.cache/tsbuildinfo.json"]
+    },
+    "test": {
+      "dependsOn": ["^topo"],
+      "outputs": ["node_modules/.cache/vitest"]
+    },
+    "test:coverage": {
+      "dependsOn": ["^topo"],
+      "outputs": ["node_modules/.cache/vitest"]
+    },
+    "clean": {
+      "cache": false
+    },
+    "//#clean": {
+      "cache": false
+    }
+  },
+  "globalEnv": [
+    "APP_ENV",
+    "AUTH_SECRET",
+    "AUTH_TRUST_HOST",
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET",
+    "MANDATORY_EMAIL_CONFIRMATION",
+    "EMAIL_CONFIRMATION_METHOD",
+    "RESET_PASSWORD_METHOD",
+    "DEFAULT_LOGIN_REDIRECT",
+    "POSTGRES_URL",
+    "POSTGRES_PRISMA_URL",
+    "POSTGRES_URL_NO_SSL",
+    "POSTGRES_URL_NON_POOLING",
+    "POSTGRES_USER",
+    "POSTGRES_HOST",
+    "POSTGRES_PASSWORD",
+    "POSTGRES_DATABASE",
+    "UPSTASH_REDIS_REST_URL",
+    "UPSTASH_REDIS_REST_TOKEN",
+    "RESEND_AUDIENCE_ID",
+    "RESEND_FROM",
+    "RESEND_TOKEN",
+    "STRIPE_SECRET_KEY",
+    "BETTERSTACK_API_KEY",
+    "BETTERSTACK_URL",
+    "SENTRY_ORG",
+    "SENTRY_PROJECT",
+    "FLAGS_SECRET"
+  ],
+  "globalPassThroughEnv": [
+    "NODE_ENV",
+    "CI",
+    "VERCEL",
+    "VERCEL_ENV",
+    "VERCEL_URL",
+    "npm_lifecycle_event"
+  ]
+}

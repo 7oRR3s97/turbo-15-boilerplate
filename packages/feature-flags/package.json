@@ -1,0 +1,17 @@
+{
+  "name": "@packages/feature-flags",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@packages/analytics": "workspace:*",
+    "@packages/auth": "workspace:*",
+    "@vercel/flags": "^2.6.3"
+  },
+  "peerDependencies": {
+    "next": "catalog:"
+  },
+  "devDependencies": {
+    "@tooling/typescript-config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

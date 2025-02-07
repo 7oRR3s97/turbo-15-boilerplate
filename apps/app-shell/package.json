@@ -1,0 +1,67 @@
+{
+  "name": "@apps/app-shell",
+  "version": "2.4.0",
+  "private": true,
+  "exports": {
+    ".": [
+      "./src/hooks/index.ts"
+    ]
+  },
+  "scripts": {
+    "app:android": "npx cap run android",
+    "app:build": "rsbuild build",
+    "app:dev": "rsbuild dev --open",
+    "app:generate-assets": "pnpm exec capacitor-assets generate --ios --android",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "app:ios": "npx cap run ios",
+    "lint": "eslint .",
+    "app:preview": "rsbuild preview",
+    "app:sync": "npx cap sync",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "prettier": "@tooling/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "@tooling/eslint-config/base",
+      "@tooling/eslint-config/react",
+      "@tooling/eslint-config/storybook"
+    ]
+  },
+  "dependencies": {
+    "@capacitor-community/file-opener": "6.0.1",
+    "@capacitor/android": "6.1.2",
+    "@capacitor/core": "6.1.2",
+    "@capacitor/device": "6.0.1",
+    "@capacitor/filesystem": "6.0.1",
+    "@capacitor/ios": "6.1.2",
+    "@capacitor/splash-screen": "6.0.2",
+    "@capacitor/status-bar": "6.0.1",
+    "capacitor-plugin-safe-area": "3.0.3",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "3.0.5",
+    "@capacitor/cli": "6.1.2",
+    "@rsbuild/core": "1.0.1-beta.14",
+    "@rsbuild/plugin-react": "1.0.1-beta.14",
+    "@testing-library/react": "13.4.0",
+    "@tooling/eslint-config": "workspace:*",
+    "@tooling/prettier-config": "workspace:*",
+    "@tooling/tailwind-config": "workspace:*",
+    "@tooling/typescript-config": "workspace:*",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "^4.3.3",
+    "@vitest/coverage-v8": "2.1.5",
+    "eslint": "catalog:",
+    "globals": "15.9.0",
+    "jsdom": "^25.0.1",
+    "prettier": "catalog:",
+    "tailwindcss": "3.4.6",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

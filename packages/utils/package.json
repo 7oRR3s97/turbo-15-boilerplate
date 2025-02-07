@@ -1,0 +1,14 @@
+{
+  "name": "@packages/utils",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@tooling/eslint-config": "workspace:*",
+    "@tooling/prettier-config": "workspace:*",
+    "@tooling/typescript-config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
