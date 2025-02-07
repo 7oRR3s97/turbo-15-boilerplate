@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@casl/ability": "6.7.2",
-    "@casl/react": "4.0.0",
+    "@casl/react": "5.0.0",
     "@packages/db": "workspace:*",
     "react": "catalog:",
     "react-dom": "catalog:",
