@@ -20,7 +20,7 @@
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "drizzle-orm": "^0.36.0",
     "drizzle-zod": "0.5.1",
     "pg": "^8.11.5",
