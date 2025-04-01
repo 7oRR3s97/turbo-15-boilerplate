@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@auth/core": "0.37.2",
-    "@auth/drizzle-adapter": "^0.8.1",
+    "@auth/drizzle-adapter": "^1.8.0",
     "@packages/analytics": "workspace:*",
     "@packages/db": "workspace:*",
     "@packages/env": "workspace:*",
